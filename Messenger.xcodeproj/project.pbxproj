@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0122B8D5979C954A12D9F513 /* Pods_Messenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F02D103DE71A2F209453F3 /* Pods_Messenger.framework */; };
+		082428812792FA3A00EA1EA3 /* FirebaseUserListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082428802792FA3A00EA1EA3 /* FirebaseUserListener.swift */; };
 		083EEEAA278395D2008E6CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083EEEA9278395D2008E6CCF /* AppDelegate.swift */; };
 		083EEEAC278395D2008E6CCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083EEEAB278395D2008E6CCF /* SceneDelegate.swift */; };
 		083EEEAE278395D2008E6CCF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083EEEAD278395D2008E6CCF /* LoginViewController.swift */; };
@@ -15,9 +16,13 @@
 		083EEEB3278395D5008E6CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 083EEEB2278395D5008E6CCF /* Assets.xcassets */; };
 		083EEEB6278395D5008E6CCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 083EEEB4278395D5008E6CCF /* LaunchScreen.storyboard */; };
 		083EEEBE2783B1CE008E6CCF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 083EEEBD2783B1CE008E6CCF /* GoogleService-Info.plist */; };
+		08474ECF2792EB20003EA38A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08474ECE2792EB20003EA38A /* User.swift */; };
+		08474ED22792F4E7003EA38A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08474ED12792F4E7003EA38A /* Constants.swift */; };
+		08474ED42792F8AD003EA38A /* FCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08474ED32792F8AD003EA38A /* FCollectionReference.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		082428802792FA3A00EA1EA3 /* FirebaseUserListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserListener.swift; sourceTree = "<group>"; };
 		083EEEA6278395D2008E6CCF /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		083EEEA9278395D2008E6CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		083EEEAB278395D2008E6CCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +32,9 @@
 		083EEEB5278395D5008E6CCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		083EEEB7278395D5008E6CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		083EEEBD2783B1CE008E6CCF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		08474ECE2792EB20003EA38A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		08474ED12792F4E7003EA38A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		08474ED32792F8AD003EA38A /* FCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCollectionReference.swift; sourceTree = "<group>"; };
 		51F02D103DE71A2F209453F3 /* Pods_Messenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Messenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F64393043802E16F263F6F8 /* Pods-Messenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messenger.debug.xcconfig"; path = "Target Support Files/Pods-Messenger/Pods-Messenger.debug.xcconfig"; sourceTree = "<group>"; };
 		DF1D5ED764AF0993E8F94744 /* Pods-Messenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messenger.release.xcconfig"; path = "Target Support Files/Pods-Messenger/Pods-Messenger.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +76,9 @@
 				083EEEA9278395D2008E6CCF /* AppDelegate.swift */,
 				083EEEAB278395D2008E6CCF /* SceneDelegate.swift */,
 				083EEEAD278395D2008E6CCF /* LoginViewController.swift */,
+				08474ED12792F4E7003EA38A /* Constants.swift */,
+				08474ED52792F997003EA38A /* Firebase Helpers */,
+				08474ED02792EB2C003EA38A /* Model */,
 				083EEEAF278395D2008E6CCF /* Main.storyboard */,
 				083EEEBD2783B1CE008E6CCF /* GoogleService-Info.plist */,
 				083EEEB2278395D5008E6CCF /* Assets.xcassets */,
@@ -75,6 +86,23 @@
 				083EEEB7278395D5008E6CCF /* Info.plist */,
 			);
 			path = Messenger;
+			sourceTree = "<group>";
+		};
+		08474ED02792EB2C003EA38A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				08474ECE2792EB20003EA38A /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		08474ED52792F997003EA38A /* Firebase Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				08474ED32792F8AD003EA38A /* FCollectionReference.swift */,
+				082428802792FA3A00EA1EA3 /* FirebaseUserListener.swift */,
+			);
+			path = "Firebase Helpers";
 			sourceTree = "<group>";
 		};
 		560C28DE8964A271300A2B04 /* Pods */ = {
@@ -210,8 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08474ED42792F8AD003EA38A /* FCollectionReference.swift in Sources */,
+				08474ED22792F4E7003EA38A /* Constants.swift in Sources */,
+				08474ECF2792EB20003EA38A /* User.swift in Sources */,
 				083EEEAE278395D2008E6CCF /* LoginViewController.swift in Sources */,
 				083EEEAA278395D2008E6CCF /* AppDelegate.swift in Sources */,
+				082428812792FA3A00EA1EA3 /* FirebaseUserListener.swift in Sources */,
 				083EEEAC278395D2008E6CCF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
