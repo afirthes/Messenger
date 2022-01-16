@@ -56,6 +56,19 @@ class SettingsTableViewController: UITableViewController {
     
     @IBAction func logOutButtonPressed(_ sender: Any) {
         
+        FirebaseUserListener.shared.logOutCurrentUser { error in
+            if error == nil {
+                let loginView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginView")
+                
+                DispatchQueue.main.async {
+                    loginView.modalPresentationStyle = .fullScreen
+                    self.present(loginView, animated: true, completion: nil)
+                }
+            } else {
+                print(error!.localizedDescription)
+            }
+        }
+        
     }
     
     private func showUserInfo() {

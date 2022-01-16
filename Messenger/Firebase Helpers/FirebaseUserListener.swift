@@ -78,6 +78,18 @@ class FirebaseUserListener {
         
     }
     
+    func logOutCurrentUser(completion: @escaping (_ error: Error?) -> Void) {
+        
+        do {
+            try Auth.auth().signOut()
+            userDefaults.removeObject(forKey: CURRENT_USER)
+            userDefaults.synchronize()
+            completion(nil)
+        } catch {
+            completion(error)
+        }
+    }
+    
     func downlaodUserFromFirebse(userId: String, email: String? = nil) {
         firebaseReference(.User).document(userId).getDocument { querySnapshot, error in
             guard let document = querySnapshot else {
