@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0122B8D5979C954A12D9F513 /* Pods_Messenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F02D103DE71A2F209453F3 /* Pods_Messenger.framework */; };
 		082428812792FA3A00EA1EA3 /* FirebaseUserListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082428802792FA3A00EA1EA3 /* FirebaseUserListener.swift */; };
+		0824288327943E4800EA1EA3 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0824288227943E4800EA1EA3 /* SettingsTableViewController.swift */; };
 		083EEEAA278395D2008E6CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083EEEA9278395D2008E6CCF /* AppDelegate.swift */; };
 		083EEEAC278395D2008E6CCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083EEEAB278395D2008E6CCF /* SceneDelegate.swift */; };
 		083EEEAE278395D2008E6CCF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083EEEAD278395D2008E6CCF /* LoginViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		082428802792FA3A00EA1EA3 /* FirebaseUserListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserListener.swift; sourceTree = "<group>"; };
+		0824288227943E4800EA1EA3 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		083EEEA6278395D2008E6CCF /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		083EEEA9278395D2008E6CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		083EEEAB278395D2008E6CCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				083EEEA9278395D2008E6CCF /* AppDelegate.swift */,
 				083EEEAB278395D2008E6CCF /* SceneDelegate.swift */,
 				083EEEAD278395D2008E6CCF /* LoginViewController.swift */,
+				0824288227943E4800EA1EA3 /* SettingsTableViewController.swift */,
 				08474ED12792F4E7003EA38A /* Constants.swift */,
 				08474ED52792F997003EA38A /* Firebase Helpers */,
 				08474ED02792EB2C003EA38A /* Model */,
@@ -242,6 +245,7 @@
 				08474ED22792F4E7003EA38A /* Constants.swift in Sources */,
 				08474ECF2792EB20003EA38A /* User.swift in Sources */,
 				083EEEAE278395D2008E6CCF /* LoginViewController.swift in Sources */,
+				0824288327943E4800EA1EA3 /* SettingsTableViewController.swift in Sources */,
 				083EEEAA278395D2008E6CCF /* AppDelegate.swift in Sources */,
 				082428812792FA3A00EA1EA3 /* FirebaseUserListener.swift in Sources */,
 				083EEEAC278395D2008E6CCF /* SceneDelegate.swift in Sources */,
